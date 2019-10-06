@@ -1,0 +1,18 @@
+ion-input {margin-bottom:10px;border-bottom:2px solid rgb(255, 0, 255);padding:15px 0}
+ion-grid {background: #fff;padding:10px;border-radius:3px;border:1px solid #ddd;}
+ion-textarea {height:200px;width:100%;border:1px solid #eee;}
+
+ion-content {--background:rgb(255, 0, 235);}
+
+ion-select {padding:15px;border-bottom:2px solid rgb(255, 0, 255);}
+
+ion-label {display:inline-block;border-bottom: 2px solid rgb(255, 0, 255);padding-bottom:7px;
+}
+ion-content{
+    --background: url('../login/mc.jpg') center;
+    
+}
+
+ion-input[type=file]{
+    background: #4b6aa5;color: #fff;border-bottom: none;font-size:14px;
+}

@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+        Tambah Produk
+    </ion-title>
+  </ion-toolbar>
+ </ion-header>
+
+<ion-content padding>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-input type="text" name="name" placeholder="Nama Skin"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+          <ion-label>Kategori</ion-label>
+          <ion-select value="ml" okText="OK">
+            <ion-select-option value="normal">Normal Skin</ion-select-option>
+            <ion-select-option value="elite">Elite Skin</ion-select-option>
+            <ion-select-option value="epic">Epic Skin</ion-select-option>
+            <ion-select-option value="legend">Legend Skin</ion-select-option>
+            <ion-select-option value="starlight">Starlight Skin</ion-select-option>
+            <ion-select-option value="special">Special Skin</ion-select-option>
+            <ion-select-option value="limited">Limited Skin</ion-select-option>
+            <ion-select-option value="zodiac">Zodiac Skin</ion-select-option>
+          </ion-select>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-input type="text" name="harga" placeholder="Harga"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+          <ion-input type="file" accept="image/*" id="upload" [(ngModel)]="imageFilePath" (ionChange)="imageFilePath_change($event)"></ion-input>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-textarea name="desc" placeholder="Diskripsi"></ion-textarea>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button name="simpan" size="medium" color="success" expand="block">SIMPAN</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
